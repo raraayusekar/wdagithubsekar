@@ -1,0 +1,186 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffaf5;
+    color: #44352e;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a65346;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #44352e;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c16b5b;
+}
+
+/* METERAN DEKORASI */
+.meteran {
+    height: 6px;
+    background: repeating-linear-gradient(
+        90deg,
+        #bd7869 0px,
+        #bd7869 15px,
+        #fffaf5 15px,
+        #fffaf5 25px
+    );
+}
+
+/* HERO */
+.hero {
+    min-height: 80vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(
+        120deg,
+        #fff5ed,
+        #f5dfd2
+    );
+}
+
+.hero-teks {
+    max-width: 650px;
+}
+
+.hero-teks h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #713f35;
+    margin-bottom: 22px;
+}
+
+.hero-teks p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #725e55;
+    margin-bottom: 30px;
+}
+
+/* TOMBOL */
+.tombol {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #a65346;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 5px 8px 5px 0;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background: #783d34;
+    transform: translateY(-3px);
+}
+
+.tombol-garis {
+    background: transparent;
+    color: #a65346;
+    border: 2px solid #a65346;
+}
+
+.tombol-garis:hover {
+    background: #a65346;
+    color: white;
+}
+
+/* KARTU JAM BUKA */
+.hero-kartu {
+    width: 300px;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(100,50,30,0.12);
+    border-top: 5px solid #bd7869;
+}
+
+.hero-kartu h2 {
+    color: #a65346;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.hero-kartu p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #725e55;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .hero-teks h1 {
+        font-size: 34px;
+    }
+
+    .hero-teks p {
+        font-size: 15px;
+    }
+
+    .hero-kartu {
+        width: 100%;
+        max-width: 350px;
+    }
+}
